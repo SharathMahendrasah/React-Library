@@ -1,5 +1,6 @@
 import React from "react";
 import UndrawBooks from "../assets/Undraw_Books.svg";
+import { HashLink } from "react-router-hash-link";
 
 const Landing = () => {
   return (
@@ -11,9 +12,9 @@ const Landing = () => {
             <h2>
               Find your dream book with <span className="purple">Library</span>
             </h2>
-            <a href="#features">
+            <HashLink to="/#features">
               <button className="btn">Browse Books</button>
-            </a>
+            </HashLink>
           </div>
           <figure className="header__img--wrapper">
             <img src={UndrawBooks} alt="" />
